@@ -1,5 +1,3 @@
-import os
-import re
 import sys
 sys.path.append("..")
 import fmt
@@ -10,7 +8,6 @@ from userassist import regmon
 
 VERSION = "0.1.0"
 VALID_DEBUG_LEVELS = ["ERROR", "WARN", "INFO", "DEBUG"]
-RE_USER_ASSIST = re.compile(r"CurrentVersion\\Explorer\\UserAssist")
 
 logging.basicConfig(
     level=logging.DEBUG
